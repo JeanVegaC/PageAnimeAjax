@@ -1,0 +1,44 @@
+[
+    {
+        "name":"Bokutachi wa Benkyō ga Dekinai",
+        "img":"https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+        "day":"Monday"
+    },
+    {
+        "name":"Noragami",
+        "img":"https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+        "day":"Tuesday"
+    },
+    {
+        "name":"Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+        "img":"https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+        "day":"Wednesday"
+
+    },
+    {
+        "name":"Nazo no Kanojo X",
+        "img":"https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+        "day":"Thursday"
+    },
+    {
+        "name":"Kaguya-sama wa Kokurasetai -Ultra Romantic-",
+        "img":"https://ramenparados.com/wp-content/uploads/2021/05/img_main02-300x395.jpeg",
+        "day":"Friday"
+    },
+    {
+        "name":"Komi-san wa, Comyushou desu. 2nd Season",
+        "img":"https://somoskudasai.com/wp-content/uploads/2022/03/visual_2.jpg",
+        "day":"Saturday"
+    },
+    {
+        "name":"Date A Live IV",
+        "img":"https://ramenparados.com/wp-content/uploads/2021/03/Date-A-Live-IV.jpg",
+        "day":"Sunday"
+    },
+    {
+        "name":"SPY x FAMILY",
+        "img":"https://img1.ak.crunchyroll.com/i/spire2/dd4cb19f0248492a47a3f4c74d1f5b0d1646497812_main.jpg",
+        "day":"Monday"  
+    }
+    
+]

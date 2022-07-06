@@ -1,0 +1,109 @@
+/* ================ HOME ================ */
+
+/* HOME SHARED */
+
+.added-header,
+.emision-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.added-more a,
+.emision-more a{
+    color: #fff;
+}
+
+.home-added,
+.home-emision{
+    padding:1rem 1.3rem;
+    margin: 0 0 2rem 0;
+    
+}
+
+
+.home-container{
+    margin: 1rem 2rem;
+}
+
+.list-added,
+.list-emision{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 0 1rem;
+    flex-wrap: wrap;
+}
+
+.added,
+.emision{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 300px;
+    width: 230px;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.added img,
+.emision img{
+    object-fit: cover;
+    object-position: center 15%;
+}
+
+/* HOME */
+
+.added{
+    height: 100px;
+    width: 630px;
+}
+
+.added h3,
+.emision h3{
+    
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    padding:0 4px;
+    
+}
+
+.emision h4{
+    
+    position: absolute;
+    bottom: 12px;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    padding:0 4px;
+    
+}
+
+.added h5{
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+
+}
+
+.added-overlay,
+.emision-overlay{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-dark);
+    opacity: 0;
+    transition: .4s;
+    z-index: 0;
+    
+}
+
+.added:hover .added-overlay,
+.emision:hover .emision-overlay{
+    opacity: .800;
+    cursor: pointer;
+}

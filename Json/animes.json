@@ -1,0 +1,561 @@
+{
+  "animes": [
+    {
+      "name": "Bokutachi wa Benkyō ga Dekinai",
+      "img": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Harem"
+        }
+      ],
+      "favorite": "true",
+      "caps": [
+        {
+          "id": 1,
+          "url": "/assets/video/Bokutachi wa Benkyou ga Dekinai - 01.mp4",
+          "visto": "true"
+        },
+        {
+          "id": 2,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": "false"
+        },
+        {
+          "id": 3,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": "false"
+        }
+      ],
+      "sinopsis": "El manga sigue la historia de Nariyuki Yuiga, un estudiante de tercer año de preparatoria de la Academia Ichinose, mientras enseña a tres genios de diferentes materias para obtener una beca universitaria.",
+      "id": 1
+    },
+    {
+      "name": "Noragami",
+      "img": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Action"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Noragami nos presenta a Hiyori, un jóven que murió para evitar que a una persona que era desconocida para él fuese atropellada por un autobús. Ahora, Hiyori se encuentra en una especie de limbo donde descubre a Yato, que aunque es un dios, tiene bastantes pocos seguidores.",
+      "id": 2
+    },
+    {
+      "name": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+      "img": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Fiction"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Al albergar una mala reputación luego de presuntamente hospitalizar a tres personas, Sakuta intenta mantener un perfil bajo hasta que su reunión con Mai lo incita a investigar el síndrome de la adolescencia. El síndrome de la adolescencia de su hermana Kaede también lo afectó, sufriendo tres cortes en el pecho.",
+      "state": "Finalizado",
+      "id": 3
+    },
+    {
+      "name": "Nazo no Kanojo X",
+      "img": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Fiction"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 3,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 4,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 5,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Nazo no Kanojo X narra la relación existente entre dos estudiantes de instituto, Mikoto Urabe y Akira Tsubaki. Mikoto Urabe, aparte de llevar el pelo cubriéndole el rostro, nadie diría que es una persona fuera de lo normal, pero Akira bajo ciertas circunstancias descubre el error del razonamiento.",
+      "state": "Finalizado",
+      "id": 4
+    },
+    {
+      "name": "Golden Time",
+      "img": "https://img1.ak.crunchyroll.com/i/spire4/fc8938a7d556f9068bb8ed327c6c56351380569594_full.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Mistery"
+        },
+        {
+          "id": 3,
+          "name": "Suspens"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire4/fc8938a7d556f9068bb8ed327c6c56351380569594_full.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire4/fc8938a7d556f9068bb8ed327c6c56351380569594_full.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Tada Banri es un joven universitario que acude a Tokio con el objetivo de formar una nueva vida, cortando cualquier lazo de su pasado. Este cambio se debe a un accidente que sufrió al día siguiente de su graduación de la preparatoria, accidente que le provocó una terrible amnesia.",
+      "state": "Finalizado",
+      "id": 5
+    },
+    {
+      "name": "Komi-san wa, Comyushou desu. 2nd Season",
+      "img": "https://somoskudasai.com/wp-content/uploads/2022/03/visual_2.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Comedy"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Hitohito Tadano es el típico chico de instituto. Con su lema de vida de “leer la situación y asegurarse de mantenerse alejado de los problemas”, rápidamente descubre que sentarse al lado de Shouko lo ha convertido en el enemigo de todos en su clase.",
+      "state": "En emisión",
+      "id": 6
+    },
+    {
+      "name": "Kaguya-sama wa Kokurasetai -Ultra Romantic-",
+      "img": "https://ramenparados.com/wp-content/uploads/2021/05/img_main02-300x395.jpeg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Drama"
+        },
+        {
+          "id": 3,
+          "name": "Comedy"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Kaguya es hija de un conglomerado familiar adinerado, y Miyuki es el mejor estudiante de la escuela y es muy conocido en toda la prefectura. Aunque se gustan, son demasiado orgullosos para confesar su amor, ya que creen que quien lo haga primero perdería.",
+      "state": "En emisión",
+      "id": 7
+    },
+    {
+      "name": "Boku no Kanojo ga Majimesugiru Sho-bitch na Ken",
+      "img": "http://ramenparados.com/wp-content/uploads/2017/09/Boku-no-Kanojo-ga-Majimesugiru-Sho-bitch-na-Ken-key-anime.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Comedy"
+        },
+        {
+          "id": 3,
+          "name": "Ecchi"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Akiho es una estudiante modelo de segundo año de secundaria hermosa, de apariencia distante y una chica popular en su clase, y el interés amoroso de Haruka. Sin embargo, ella no tiene absolutamente ninguna experiencia con las relaciones íntimas y, por lo tanto, tiende a sobreanalizar este tema en su nerviosismo.",
+      "state": "Finalizado",
+      "id": 8
+    },
+    {
+      "name": "SPY x FAMILY",
+      "img": "https://img1.ak.crunchyroll.com/i/spire2/dd4cb19f0248492a47a3f4c74d1f5b0d1646497812_main.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Spy"
+        },
+        {
+          "id": 3,
+          "name": "Comedy"
+        },
+        {
+          "id": 4,
+          "name": "Action"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Todo el mundo tiene una parte de sí mismo que no puede mostrar a nadie más. En un momento en que todas las naciones del mundo estaban involucradas en una feroz guerra de información que ocurría a puertas cerradas, Ostania y Westalis habían estado en un estado de guerra fría entre sí durante décadas. La División Enfocada en el Este (WISE) de los Servicios de Inteligencia de Westalis envía a su espía más talentoso, Crepúsculo, en una misión ultrasecreta para investigar los movimientos de Donovan Desmond, el presidente del Partido de Unidad Nacional de Ostania, quien amenaza los esfuerzos de paz entre las dos naciones. Esta misión se conoce como Operación Strix. Consiste en armar una familia en una semana para infiltrarse en las reuniones sociales organizadas por la escuela de élite a la que asiste el hijo de Desmond. Crepúsculo asume la identidad del psiquiatra Loid Forger y comienza a buscar familiares. Pero Anya, la hija que adopta, resulta tener la capacidad de leer la mente de las personas, mientras que su esposa, Yor, ¡es una asesina! Dado que a cada uno le interesa mantener estos hechos ocultos, comienzan a vivir juntos mientras se ocultan sus verdaderas identidades. La paz mundial está ahora en manos de esta nueva familia mientras se embarcan en una aventura llena de sorpresas.",
+      "state": "En emisión",
+      "id": 9
+    },
+    {
+      "name": "Sono Bisque Doll wa Koi wo Suru",
+      "img": "https://pics.filmaffinity.com/Sono_Bisque_Doll_wa_Koi_wo_Suru_Serie_de_TV-288735377-large.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Drama"
+        },
+        {
+          "id": 3,
+          "name": "Comedy"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "La estudiante de secundaria Wakana Gojo se preocupa por una cosa: hacer muñecas Hina. Sin nadie con quien compartir su obsesión, tiene problemas para encontrar amigos, o incluso para mantener una conversación. Pero después de que la niña más popular de la escuela, Marin Kitagawa, revela su propio secreto, descubre un nuevo propósito para sus habilidades de costura. ¡Juntos harán realidad sus sueños de cosplay!",
+      "state": "Finalizado",
+      "id": 10
+    },
+    {
+      "name": "Komi-san wa, Comyushou desu.",
+      "img": "https://somoskudasai.com/wp-content/uploads/2021/09/komi-san-kudasai.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Comedy"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "El mayor sueño de la estudiante de secundaria Shoko Komi, socialmente ansiosa, es hacer algunos amigos, pero todos en la escuela confunden su ansiedad social paralizante con una reserva fría. Con todo el cuerpo estudiantil manteniéndose a distancia y Komi incapaz de pronunciar una sola palabra, la amistad podría estar para siempre fuera de su alcance.",
+      "state": "Finalizado",
+      "id": 11
+    },
+    {
+      "name": "Mieruko-chan",
+      "img": "https://1.bp.blogspot.com/-6BnKpSIvHNM/YPFvISqg19I/AAAAAAAARM8/NEZ2a6FnK0Ui9S7O6z5c16syKVBu5mLNgCLcBGAsYHQ/s0/Mieruko-chan.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Horror"
+        },
+        {
+          "id": 2,
+          "name": "Comedy"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Una chica normal llevaba una vida normal, hasta que no lo hizo. Un día, pudo ver ... todo. ¿Qué puede hacer una chica cuando aparecen monstruos horribles sin importar en qué dirección se dé la vuelta? Y además de eso, ¡nadie más puede verlos! Obviamente, solo hay una cosa que tiene sentido: ignorarlos. Sin embargo, es un poco difícil poner la teoría en práctica cuando los fantasmas saben que ella está mirando...",
+      "state": "Finalizado",
+      "id": 12
+    },
+    {
+      "name": "Tonikaku Kawaii",
+      "img": "https://ramenparados.com/wp-content/uploads/2020/08/tonikaku-Kawaii-poster.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Drama"
+        },
+        {
+          "id": 3,
+          "name": "Comedy"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Nasa Yuzaki se enamora a primera vista después de un encuentro con el misterioso Tsukasa. Cuando Nasa le confiesa sinceramente sus sentimientos, ella responde: Saldré contigo, pero solo si estamos casados. ¡La linda y preciosa vida amorosa de recién casados de Nasa y Tsukasa está a punto de comenzar!",
+      "state": "Finalizado",
+      "id": 13
+    },
+    {
+      "name": "Shinigami Bocchan to Kuro Maid",
+      "img": "https://pics.filmaffinity.com/shinigami_bocchan_to_kuro_maid-954243024-large.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Mistery"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "Maldecido por una bruja cuando era niño, un joven duque mata a todos los seres vivos que toca. Rechazado por las personas que lo rodean, se ve obligado a vivir en soledad en una mansión en lo profundo de un bosque. Alice es la doncella del duque, y su existencia parece ser la causa de muchas preocupaciones para el joven, porque ... ¡Alice se esfuerza por acosar sexualmente al duque todos los días! A pesar de la seducción de Alice, el duque no puede tocarla a pesar de sus sentimientos románticos. ¡¿El amor puro entre ellos eventualmente dará frutos...?!",
+      "id": 14
+    },
+    {
+      "name": "Kanojo mo Kanojo",
+      "img": "https://pics.filmaffinity.com/kanojo_mo_kanojo-893958839-large.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Harem"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "El protagonista, Naoya, es un primer año de secundaria. Le pide salir a Saki, una chica de la que ha estado enamorado, y ella acepta ser su novia. Actualmente está en la nube nueve. Pero entonces, una hermosa niña llamada Nagisa se acerca un día a Naoya y le dice que quiere salir con él. Naoya se siente vacilante porque Nagisa es una chica tan buena, ¡y toma una decisión! ¡Está por comenzar un nuevo tipo de comedia romántica a partir de una decisión bastante inesperada!",
+      "state": "Finalizado",
+      "id": 15
+    },
+    {
+      "name": "Kobayashi-san Chi no Maid Dragon",
+      "img": "https://img1.ak.crunchyroll.com/i/spire4/6d3bd07ec5e5d3e3f3a5f35e50f50dec1628229684_main.jpg",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Comedy"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        },
+        {
+          "id": 2,
+          "url": "https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
+          "visto": false
+        }
+      ],
+      "sinopsis": "La historia gira en torno a Kobayashi, una oficinista normal y corriente que lleva una vida aburrida y solitaria en su pequeño departamento, hasta que un día, le salva la vida a una dragona en peligro. La dragona, llamada Tohru, tiene la habilidad de transformarse mágicamente en una adorable chica humana (aunque con cuernos y una larga cola), que hará cualquier cosa para devolverle el favor a Kobayashi, incluso proclamarse a si misma como su sirvienta. Viviendo junto a una persistente pero amorosa dragona como compañera de piso, la vida normal de Kobayashi está a punto de irse al garete.",
+      "state": "Finalizado",
+      "id": 16
+    }
+  ],
+  "favorites": [
+    {
+      "name": "Bokutachi wa Benkyō ga Dekinai",
+      "img": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+      "gender": [
+        {
+          "id": 1,
+          "name": "Romantic"
+        },
+        {
+          "id": 2,
+          "name": "Harem"
+        }
+      ],
+      "favorite": "false",
+      "caps": [
+        {
+          "id": 1,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": "true"
+        },
+        {
+          "id": 2,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": "false"
+        },
+        {
+          "id": 3,
+          "url": "https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
+          "visto": "false"
+        }
+      ],
+      "sinopsis": "El manga sigue la historia de Nariyuki Yuiga, un estudiante de tercer año de preparatoria de la Academia Ichinose, mientras enseña a tres genios de diferentes materias para obtener una beca universitaria.",
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/styles-shared.css">
+    <link rel="stylesheet" href="/modules/Emision/styles.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="nav-logo">
+                    <a href="index.html"><i class="uil uil-letter-english-a link-a"></i></a>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <ul class="links">
+                        <li class="link">
+                            <a href="/index.html" class="link-a"><i class="uil uil-estate link-a"></i>Home</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Emision/index.html" class="link-a"><i
+                                    class="uil uil-tv-retro link-a"></i>Emisión</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Directory/index.html" class="link-a"><i
+                                    class="uil uil-book-alt link-a"></i>Directory</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Favorites/index.html" class="link-a"><i
+                                    class="uil uil-star link-a"></i>Favorites</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Notices/index.html" class="link-a"><i
+                                    class="uil uil-newspaper link-a"></i>Notices</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <input class="search" id="search" placeholder="Search"></input>
+                    <i class="uil uil-search"></i>
+                </div>
+            </div>
+            <div class="btn-nav" id="btn-toggle"><i class="uil uil-apps btn-active"></i><i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <header class="header-main">
+            <h1>Animes in emisión</h1>
+        </header>
+        <section class="Monday">
+            <div class="list-header">
+                <h2>Monday</h2>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="list-anime"></ul>
+        </section>
+        <section class="Tuesday">
+            <div class="list-header">
+                <h2>Tuesday</h2>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="list-anime"></ul>
+        </section>
+        <section class="Wednesday">
+            <div class="list-header">
+                <h2>Wednesday</h2>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="list-anime"></ul>
+        </section>
+        <section class="Thursday">
+            <div class="list-header">
+                <h2>Thursday</h2>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="list-anime"></ul>
+        </section>
+        <section class="Friday">
+            <div class="list-header">
+                <h2>Friday</h2>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="list-anime"></ul>
+        </section>
+        <section class="Saturday">
+            <div class="list-header">
+                <h2>Saturday</h2>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="list-anime"></ul>
+        </section>
+        <section class="Sunday">
+            <div class="list-header">
+                <h2>Sunday</h2>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <ul class="list-anime"></ul>
+        </section>
+        <template id="anime-template">
+            <li class="anime">
+                <img src="" alt="" class="anime-img">
+                <div class="anime-overlay">
+                    <h4 class="anime-name"></h4>
+                </div>
+            </li>
+        </template>
+    </main>
+    <script src="/main-shared.js"></script>
+    <script src="/modules/Emision/main.js"></script>
+</body>
+
+</html>

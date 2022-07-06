@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/styles-shared.css">
+    <link rel="stylesheet" href="/modules/Directory/styles.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!-- INCLUDES HTML -->
+    <script src="/includes-html.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="nav-logo">
+                    <a href="index.html"><i class="uil uil-letter-english-a link-a link-active"></i></a>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <ul class="links">
+                        <li class="link">
+                            <a href="/index.html" class="link-a"><i class="uil uil-estate link-a"></i>Home</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Emision/index.html" class="link-a"><i
+                                    class="uil uil-tv-retro link-a"></i>Emisión</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Directory/index.html" class="link-a"><i
+                                    class="uil uil-book-alt link-a"></i>Directory</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Favorites/index.html" class="link-a"><i
+                                    class="uil uil-star link-a"></i>Favorites</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Notices/index.html" class="link-a"><i
+                                    class="uil uil-newspaper link-a"></i>Notices</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <input class="search" id="search" placeholder="Search"></input>
+                    <i class="uil uil-search"></i>
+                </div>
+            </div>
+            <div class="btn-nav" id="btn-toggle"><i class="uil uil-apps btn-active"></i><i class="uil uil-times"></i></div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="directory-container" data-include="/shared/anime.html">
+            <div class="gender-container">
+                <ul class="list-gender">
+                    <li class="gender gender-active" id="All">
+                        <span>All</span>
+                    </li>
+                    <li class="gender" id="Romantic">
+                        <span>Romantic</span>
+                    </li>
+                    <li class="gender" id="Fiction">
+                        <span>Fiction</span>
+                    </li>
+                    <li class="gender" id="Action">
+                        <span>Action</span>
+                    </li>
+                    <li class="gender" id="Spy">
+                        <span>Spy</span>
+                    </li>
+                    <li class="gender" id="Suspens">
+                        <span>Suspens</span>
+                    </li>
+                    <li class="gender" id="Movie">
+                        <span>Movie</span>
+                    </li>
+                </ul>
+            </div>
+                <ul class="list-anime"></ul>
+        </section>
+        <template id="anime-template">
+            <li class="anime">
+                <img src="" alt="" class="anime-img">
+                <div class="anime-overlay">
+                    <i class="uil uil-star star-favorite"></i>
+                    <h4 class="anime-name"></h4>
+                </div>
+            </li>
+        </template>
+        <template id="info-template">
+            <div class="anime-info-overlay"></div>
+            <div class="anime-container">
+                <div class="anime-img">
+                    <img src="" alt="" id="anime-img">
+                </div>
+                <div class="anime-info">
+                    <h1 class="anime-name"></h1>
+                    <div class="info-sup">
+                        <h3>Sinopsis</h3>
+                        <p class="anime-sinopsis"></p>
+                    </div>
+                    <div class="info-bottom">
+                        <h3>Información general</h3>
+                        <div>
+                            <span>Generos:</span>
+                            <ul class="list-genders">
+                                
+                            </ul>                            
+                        </div>
+                        <div>
+                            <span>Estado:</span>
+                            <span class="anime-state"></span>
+                        </div>
+                        <div>
+                            <span>Capitulos:</span>
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <template id="gender-template">
+            <li class="box-gender">
+                <span class="span-gender"></span>
+            </li>
+        </template>
+        <template id="cap-template">
+            <li class="cap">
+                <div class="link-cap">
+                    <span class="num-cap"></span><i class="uil uil-check">Visto</i>
+                </div>
+            </li>
+        </template>
+        <template id="media-info-template">
+            <h1 class="media-title"></h1>
+        </template>
+        <template id="media-video-template">
+            <video src="" class="media-video" controls></video>
+        </template>
+    </main>
+    <script src="/main-shared.js"></script>
+    <script src="/modules/Directory/main.js"></script>
+</body>
+</html>

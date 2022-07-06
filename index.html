@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles-shared.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <!-- INCLUDES HTML -->
+    <script src="includes-html.js"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="nav-logo">
+                    <a href="/index.html"><i class="uil uil-letter-english-a link-a"></i></a>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <ul class="links">
+                        <li class="link">
+                            <a href="/index.html" class="link-a"><i class="uil uil-estate link-a"></i>Home</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Emision/index.html" class="link-a"><i
+                                    class="uil uil-tv-retro link-a"></i>Emisión</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Directory/index.html" class="link-a"><i
+                                    class="uil uil-book-alt link-a"></i>Directory</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Favorites/index.html" class="link-a"><i
+                                    class="uil uil-star link-a"></i>Favorites</a>
+                        </li>
+                        <li class="link">
+                            <a href="/modules/Notices/index.html" class="link-a"><i
+                                    class="uil uil-newspaper link-a"></i>Notices</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-search">
+                    <input class="search" id="search" placeholder="Search"></input>
+                    <i class="uil uil-search"></i>
+                </div>
+            </div>
+            <div class="btn-nav" id="btn-toggle"><i class="uil uil-apps btn-active"></i><i class="uil uil-times"></i></div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="home-container" data-include="shared/media.html">
+            <div class="home-added">
+                <div class="added-header">
+                    <h2>Recently Added</h2>
+                    <div class="added-more"><a href="modules/Directory/index.html">ver más</a></div>
+                </div>
+                <ul class="list-added"></ul>
+            </div>
+            <div class="home-emision">
+                <div class="emision-header">
+                    <h2>Anime in emisión</h2>
+                    <div class="emision-more"><a href="modules/Emision/index.html">ver más</a></div>
+                </div>
+                <ul class="list-emision"></ul>
+            </div>
+            <div class="home-favorites"></div>  
+        </section>
+        <template id="added-template">
+            <li class="added">
+                <img src="" alt="" class="added-img">
+                <div class="added-overlay">
+                    <h3 class="added-name"></h3>
+                    <h5 class="added-cap"></h5>
+                </div>
+            </li>
+        </template>
+        <template id="emision-template">
+            <li class="emision">
+                <img src="" alt="" class="emision-img">
+                <div class="emision-overlay">
+                    <h3 class="emision-name"></h3>
+                </div>
+            </li>
+        </template>
+        <template id="cap-template">
+            <li class="cap">
+                <div class="link-cap">
+                    <span class="num-cap"></span><i class="uil uil-check">Visto</i>
+                </div>
+            </li>
+        </template>
+        <template id="media-info-template">
+            <h1 class="media-title"></h1>
+        </template>
+        <template id="media-video-template">
+            <img src="" class="media-video"></img>
+        </template>
+    </main>
+    
+    <script src="main-shared.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
