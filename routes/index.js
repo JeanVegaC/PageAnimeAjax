@@ -1,9 +1,9 @@
 const { Router } = require('express');
 const router = Router();
 
-router.get('/home',(req, res)=>{
-    res.send('./index.html')
-});
+// router.get('/',(req, res)=>{
+//     res.sendFile('index.html',{root: './'});
+// });
 
 
 module.exports = router;

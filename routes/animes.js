@@ -2,7 +2,7 @@ const e = require('express');
 const {Router} = require('express');
 const router = Router();
 
-const animes = require('../Json/animes.json')
+const animes = require('../Json/animes.json');
 
 router.get('/', (req,res)=>{  
     res.send(animes);

@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina web de anime online">
     <title>Document</title>
     <!-- STYLES -->
-    <link rel="stylesheet" href="styles-shared.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles-shared.css">
+    <link rel="stylesheet" href="/modules/Notices/styles.css">
     <!-- ICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <!-- INCLUDES HTML -->
-    <script src="includes-html.js"></script>
 </head>
 <body>
-    
     <header>
         <nav>
             <div class="nav">
                 <div class="nav-logo">
-                    <a href="/index.html"><i class="uil uil-letter-english-a link-a"></i></a>
+                    <a href="index.html"><i class="uil uil-letter-english-a link-a"></i></a>
                 </div>
                 <div class="nav-links" id="nav-links">
                     <ul class="links">
@@ -58,56 +54,19 @@
         </nav>
     </header>
     <main class="container">
-        <section class="home-container" data-include="shared/media.html">
-            <div class="home-added">
-                <div class="added-header">
-                    <h2>Recently Added</h2>
-                    <div class="added-more"><a href="modules/Directory/index.html">ver más</a></div>
-                </div>
-                <ul class="list-added"></ul>
-            </div>
-            <div class="home-emision">
-                <div class="emision-header">
-                    <h2>Anime in emisión</h2>
-                    <div class="emision-more"><a href="modules/Emision/index.html">ver más</a></div>
-                </div>
-                <ul class="list-emision"></ul>
-            </div>
-            <div class="home-favorites"></div>  
-        </section>
-        <template id="added-template">
-            <li class="added">
-                <img src="" alt="" class="added-img">
-                <div class="added-overlay">
-                    <h3 class="added-name"></h3>
-                    <h5 class="added-cap"></h5>
+        <ul class="notice-list"></ul>
+        <template id="notice-template">
+            <li class="notice">
+                <img src="" alt="" class="notice-img">
+                <div class="notice-description">
+                    <h2 class="notice-title"></h2>
+                    <p class="notice-text"></p>
                 </div>
             </li>
-        </template>
-        <template id="emision-template">
-            <li class="emision">
-                <img src="" alt="" class="emision-img">
-                <div class="emision-overlay">
-                    <h3 class="emision-name"></h3>
-                </div>
-            </li>
-        </template>
-        <template id="cap-template">
-            <li class="cap">
-                <div class="link-cap">
-                    <span class="num-cap"></span><i class="uil uil-check">Visto</i>
-                </div>
-            </li>
-        </template>
-        <template id="media-info-template">
-            <h1 class="media-title"></h1>
-        </template>
-        <template id="media-video-template">
-            <video src="" class="media-video" controls tabindex="-1" disableremoteplayback webkit-playsinline playsinline preload="auto"></video>
         </template>
     </main>
-    
-    <script src="main-shared.js"></script>
+    <script src="/main-shared.js"></script>
     <script src="main.js"></script>
+    
 </body>
 </html>
