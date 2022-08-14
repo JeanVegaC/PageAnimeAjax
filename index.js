@@ -13,7 +13,7 @@ app.use(express.json());
 
 //ROUTES
 
-// app.use(require('./routes/index'));
+app.use(require('./routes/index'));
 app.use('/api/animes',require('./routes/animes'));
 app.use('/home',require('./index.html'));
 

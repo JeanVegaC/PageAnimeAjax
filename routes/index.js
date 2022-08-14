@@ -1,8 +1,8 @@
 const { Router } = require('express');
 const router = Router();
 
-router.get('/',(req, res)=>{
-    res.json({"name":"jhean 2"});
+router.get('/home',(req, res)=>{
+    res.send('./index.html')
 });
 
 
