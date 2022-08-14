@@ -110,7 +110,5 @@ document.addEventListener("click", (e) => {
     .forEach((el) => includeHTML(el, el.getAttribute("data-include")));
 
     }
-   
-    
 
   });

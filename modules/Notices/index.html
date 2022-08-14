@@ -53,7 +53,20 @@
             <div class="btn-nav" id="btn-toggle"><i class="uil uil-apps btn-active"></i><i class="uil uil-times"></i></div>
         </nav>
     </header>
-    <h1>Welcome to Notices</h1>
+    <main class="container">
+        <ul class="notice-list"></ul>
+        <template id="notice-template">
+            <li class="notice">
+                <img src="" alt="" class="notice-img">
+                <div class="notice-description">
+                    <h2 class="notice-title"></h2>
+                    <p class="notice-text"></p>
+                </div>
+            </li>
+        </template>
+    </main>
     <script src="/main-shared.js"></script>
+    <script src="main.js"></script>
+    
 </body>
 </html>

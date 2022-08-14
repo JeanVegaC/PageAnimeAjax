@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Tate no yusa celebra su decimo aniversario con su final de temporada",
+        "img": "https://pics.filmaffinity.com/Tate_no_Yuusha_no_Nariagari_Serie_de_TV-959299997-large.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi porro nostrum pariatur natus vero maxime nam, dicta quae quibusdam repellat, aliquam tempora praesentium molestias cumque rem quam, consequatur quod."
+    },
+    {
+        "id": 2,
+        "title": "Rakudai Kishi no Cavalry confirma su tercera temporada para inicios de invierno del 2023",
+        "img": "https://pm1.narvii.com/6089/2a4a327b140f144926a63bd67cbe40c4a6cd0cac_hq.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi porro nostrum pariatur natus vero maxime nam, dicta quae quibusdam repellat, aliquam tempora praesentium molestias cumque rem quam, consequatur quod."
+    },
+    {
+        "id": 3,
+        "title": "Shingeki no kyojin logra obtener el puesto a mejor anime del año 2021",
+        "img": "https://www.latercera.com/resizer/Cj-SNV3wveGF7HO18vl9RL_0gZI=/arc-anglerfish-arc2-prod-copesa/public/RHPMK2A2YVHD7JAUR4ZXEXYTH4.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi porro nostrum pariatur natus vero maxime nam, dicta quae quibusdam repellat, aliquam tempora praesentium molestias cumque rem quam, consequatur quod."
+    },
+    {
+        "id": 4,
+        "title": "Toradora hace oficial su nueva edicion de su manga",
+        "img": "https://elrincondenetflix.com/wp-content/uploads/2021/02/71iTBfKZR4L._RI.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sequi porro nostrum pariatur natus vero maxime nam, dicta quae quibusdam repellat, aliquam tempora praesentium molestias cumque rem quam, consequatur quod."
+    }
+]
