@@ -38,7 +38,7 @@ app.get('/Directory', (req,res)=>{
     res.sendFile(__dirname +'/modules/Directory/index.html');
 });
 
-app.get('/Directory/styles', (req,res)=>{
+app.get('/Directory/styles.css', (req,res)=>{
     res.sendFile(__dirname +'/modules/Directory/styles.css');
 });
 
@@ -54,6 +54,7 @@ app.get('/Notices', (req,res)=>{
 
 
 app.use(express.static('public'));
+app.use(express.static('modules'));
 
 //SETTING
 app.set('port', process.env.PORT || 3000);
