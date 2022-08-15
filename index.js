@@ -28,6 +28,24 @@ app.get('/includes-html.js', (req,res)=>{
     res.sendFile(__dirname +'/includes-html.js');
 });
 
+// SECTIONS
+
+app.get('/Emision', (req,res)=>{
+    res.sendFile(__dirname +'/modules/Emision/index.html');
+});
+
+app.get('/Directory', (req,res)=>{
+    res.sendFile(__dirname +'/modules/Directory/index.html');
+});
+
+app.get('/Favorites', (req,res)=>{
+    res.sendFile(__dirname +'/modules/Favorites/index.html');
+});
+
+app.get('/Notices', (req,res)=>{
+    res.sendFile(__dirname +'/modules/Notices/index.html');
+});
+
 
 
 
