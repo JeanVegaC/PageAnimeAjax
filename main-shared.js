@@ -31,7 +31,7 @@ const mediaPlayer = async (id,cap)=>{
          $mediaVideoFragment = d.createDocumentFragment();
         
         //FETCH FOR ANIME TITLE AND MEDIA 
-        let res = await fetch(`http://localhost:3000/animes/${id}`),
+        let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${id}`),
         json = await res.json();
         
 
@@ -69,7 +69,7 @@ const mediaPlayer = async (id,cap)=>{
         const $capTemplate = d.getElementById('cap-template').content,
         $capFragment = d.createDocumentFragment();
 
-        res = await fetch(`http://localhost:3000/animes/${id}`),
+        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${id}`),
         json = await res.json();
 
         
@@ -146,7 +146,7 @@ const getAnimes = async (gender) => {
         
         if (gender == undefined) {
 
-            let res = await fetch('http://localhost:3000/animes'),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 
             json.forEach(e => {
@@ -177,7 +177,7 @@ const getAnimes = async (gender) => {
  const $mediaInfo = d.querySelector('.media-info');
         
 
-            let res = await fetch('http://localhost:3000/animes'),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 
             const haveGender = (e,gen)=>{
@@ -271,7 +271,7 @@ const getAnime = async e=>{
          $capFragment = d.createDocumentFragment();
 
     /* FETCH FOR ANIME INFO */
-        let res = await fetch(`http://localhost:3000/animes/${e}`),
+        let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e}`),
         json = await res.json();
 
                 $infoTemplate.querySelector('#anime-img').src = json.img;
@@ -300,7 +300,7 @@ const getAnime = async e=>{
 
     /* FETCH FOR ANIME GENDER */       
 
-        res = await fetch(`http://localhost:3000/animes/${e}`),
+        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e}`),
         json = await res.json();
         
         json.gender.forEach(e=>{
@@ -319,7 +319,7 @@ const getAnime = async e=>{
 
         /* FETCH FOR ANIME CAPS */
 
-        res = await fetch(`http://localhost:3000/animes/${e}`),
+        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e}`),
         json = await res.json();
         
         
@@ -396,7 +396,7 @@ const addFavorite = async e => {
                 })
             }
 
-            let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
+            let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e.dataset.id}`, options)
 
             options = {
                 method: "DELETE",
@@ -420,7 +420,7 @@ const addFavorite = async e => {
                 })
             }
 
-            let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
+            let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e.dataset.id}`, options)
 
             options = {
                 method: "POST",
