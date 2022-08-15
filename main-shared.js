@@ -446,5 +446,192 @@ const addFavorite = async e => {
 }
 
 
+/* EMISION */
+
+{
+    const $listAnime = d.querySelectorAll('.list-anime'),
+$addedTemplate = d.getElementById("anime-template").content,
+$animeFragment = d.createDocumentFragment(),
+$listHeaders = d.querySelectorAll('.list-header'),
+$sections = d.querySelectorAll('section');
 
 
+/* FETCH GET ANIMES FOR EACH DAY */
+
+const getAnimes = async (day)=>{
+  
+     
+        let res = await fetch("/Json/emision.json"),
+        json = await res.json();
+        
+   
+    json.forEach(e => {
+    
+           if(e.day == day){
+            $addedTemplate.querySelector(".anime-img").src = e.img;
+            $addedTemplate.querySelector(".anime-name").textContent = e.name;
+            $addedTemplate.querySelector(".anime").dataset.name = e.name;
+
+            let $addedClone = d.importNode($addedTemplate, true);
+            $animeFragment.appendChild($addedClone);
+           }
+
+    });
+
+    if(day == 'Monday'){
+        $listAnime[0].appendChild($animeFragment);
+    }else if(day == 'Tuesday'){
+        $listAnime[1].appendChild($animeFragment);
+    }else if(day == 'Wednesday'){
+        $listAnime[2].appendChild($animeFragment);
+    }else if(day == 'Thursday'){
+        $listAnime[3].appendChild($animeFragment);
+    }else if(day == 'Friday'){
+        $listAnime[4].appendChild($animeFragment);
+    }else if(day == 'Saturday'){
+        $listAnime[5].appendChild($animeFragment);
+    }else{
+        $listAnime[6].appendChild($animeFragment);
+    }
+
+    
+   
+}
+
+getAnimes('Monday');
+getAnimes('Tuesday');
+getAnimes('Wednesday');
+getAnimes('Thursday');
+getAnimes('Friday');
+getAnimes('Saturday');
+getAnimes('Sunday');
+
+/* EVENT FOR ACTIVE LIST */
+
+$listHeaders.forEach(e=>{
+    e.addEventListener('click',()=>{
+        e.parentNode.classList.toggle('list-active')
+    })
+})
+
+/* ACTIVE LIST ANIME WITH API DATE */
+
+const date = new Date();
+let day;
+if(date.getDay() == 0){
+    day = '.Sunday';
+}else if(date.getDay() == 1){
+    day = '.Monday';
+}else if(date.getDay() == 2){
+    day = '.Tuesday';
+}else if(date.getDay() == 3){
+    day = '.Wednesday';
+}else if(date.getDay() == 4){
+    day = '.Thursday';
+}else if(date.getDay() == 5){
+    day = '.Friday';
+}else{
+    day = '.Saturday';
+}
+
+const activeList = day=>{
+    $sections.forEach(e=>{
+        if(e.matches(day)){
+            e.classList.add('list-active')
+        }
+    })
+}
+
+activeList(day);
+
+console.log('Entre')
+}
+
+/* FAVORITES */
+
+{
+    const $addedTemplate = d.getElementById('anime-template').content,
+    $addedFragment = d.createDocumentFragment(),
+    $addedList = d.querySelector('.list-anime');
+
+const getAnimes = async () => {
+
+    while ($addedList.firstChild) {
+        $addedList.removeChild($addedList.firstChild);
+    }
+
+    try {
+            let res = await fetch('http://localhost:3000/favorites'),
+                json = await res.json();
+            animes = await json;
+
+            json.forEach(e => {
+                $addedTemplate.querySelector('.anime-img').src = e.img;
+                $addedTemplate.querySelector('.anime-name').textContent = e.name;
+                $addedTemplate.querySelector('.anime').dataset.name = e.name;
+                $addedTemplate.querySelector('.anime').dataset.gender = e.gender;
+
+
+                let $addedClone = d.importNode($addedTemplate, true);
+                $addedFragment.appendChild($addedClone);
+            })
+            $addedList.appendChild($addedFragment);
+
+    } catch (e) {
+        console.log('Hubo un error en getAnimes/favorites: ' + e);
+    }
+}
+
+getAnimes();
+}
+
+/* NOTICES */
+{
+    
+// FETCH NOTICES
+
+const fa = async ()=>{
+    try{
+        let res = await fetch("/Json/notice.json"),
+        json = await res.json();
+    
+        const $noticeList = d.querySelector('.notice-list'),
+        $noticeTemplate = d.getElementById('notice-template').content,
+        $noticeFragment = d.createDocumentFragment();
+        
+        json.forEach( e =>{
+            $noticeTemplate.querySelector('.notice-img').src = e.img;
+            $noticeTemplate.querySelector('.notice-title').textContent = e.title;
+            $noticeTemplate.querySelector('.notice-text').textContent = e.description;
+
+            let $noticeClone = d.importNode($noticeTemplate,true);
+            $noticeFragment.appendChild($noticeClone);
+        })
+
+        $noticeList.appendChild($noticeFragment);
+
+        const notices = d.querySelectorAll('.notice');
+        noticeReverse(notices);
+
+    }catch(e) {
+        console.log('Hubo un error en main.js/Notices' + e)
+    }
+
+}
+
+fa();
+
+// STYLE NOTICES REVERSE
+
+
+const noticeReverse = (notices)=>{
+    
+    notices.forEach((e,i) => {
+        if(i%2 == 0){
+            e.classList.add('notice-reverse');
+        }
+    });
+    
+}
+
+}
