@@ -34,11 +34,10 @@ const getAnimes = async (gender) => {
         
         if (gender == undefined) {
 
-            let res = await fetch('http://localhost:3000/api/animes'),
+            let res = await fetch('http://localhost:3000/animes'),
                 json = await res.json();
-            console.log(json.animes);
 
-            json.animes.forEach(e => {
+            json.forEach(e => {
                 $addedTemplate.querySelector('.anime-img').src = e.img;
                 $addedTemplate.querySelector('.anime-name').textContent = e.name;
                 $addedTemplate.querySelector('.anime').dataset.name = e.name;
@@ -66,7 +65,7 @@ const getAnimes = async (gender) => {
  const $mediaInfo = d.querySelector('.media-info');
         
 
-            let res = await fetch('http://localhost:3000/api/animes'),
+            let res = await fetch('http://localhost:3000/animes'),
                 json = await res.json();
 
             const haveGender = (e,gen)=>{
@@ -79,7 +78,7 @@ const getAnimes = async (gender) => {
                 return res;
             }
 
-            json.animes.forEach( async e => {
+            json.forEach( async e => {
                 let haveGen = haveGender(e.gender,gender);
                 if (haveGen == true) {
 
@@ -160,7 +159,7 @@ const getAnime = async e=>{
          $capFragment = d.createDocumentFragment();
 
     /* FETCH FOR ANIME INFO */
-        let res = await fetch(`http://localhost:3000/api/animes/${e}`),
+        let res = await fetch(`http://localhost:3000/animes/${e}`),
         json = await res.json();
 
                 $infoTemplate.querySelector('#anime-img').src = json.img;
@@ -189,7 +188,7 @@ const getAnime = async e=>{
 
     /* FETCH FOR ANIME GENDER */       
 
-        res = await fetch(`http://localhost:3000/api/animes/${e}`),
+        res = await fetch(`http://localhost:3000/animes/${e}`),
         json = await res.json();
         
         json.gender.forEach(e=>{
@@ -208,7 +207,7 @@ const getAnime = async e=>{
 
         /* FETCH FOR ANIME CAPS */
 
-        res = await fetch(`http://localhost:3000/api/animes/${e}`),
+        res = await fetch(`http://localhost:3000/animes/${e}`),
         json = await res.json();
         
         
@@ -285,7 +284,7 @@ const addFavorite = async e => {
                 })
             }
 
-            let res = await fetch(`http://localhost:3000/api/animes/${e.dataset.id}`, options)
+            let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
 
             options = {
                 method: "DELETE",
@@ -309,7 +308,7 @@ const addFavorite = async e => {
                 })
             }
 
-            let res = await fetch(`http://localhost:3000/api/animes/${e.dataset.id}`, options)
+            let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
 
             options = {
                 method: "POST",
