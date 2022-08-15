@@ -149,7 +149,7 @@ const getAnimes = async (gender) => {
             let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 
-            json.forEach(e => {
+            json.animes.forEach(e => {
                 $addedTemplate.querySelector('.anime-img').src = e.img;
                 $addedTemplate.querySelector('.anime-name').textContent = e.name;
                 $addedTemplate.querySelector('.anime').dataset.name = e.name;
@@ -190,7 +190,7 @@ const getAnimes = async (gender) => {
                 return res;
             }
 
-            json.forEach( async e => {
+            json.animes.forEach( async e => {
                 let haveGen = haveGender(e.gender,gender);
                 if (haveGen == true) {
 
