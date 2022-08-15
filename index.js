@@ -38,7 +38,7 @@ app.get('/Directory', (req,res)=>{
     res.sendFile(__dirname +'/modules/Directory/index.html');
 });
 
-app.get('/Directory/styles.css', (req,res)=>{
+app.get('/Directory/styles', (req,res)=>{
     res.sendFile(__dirname +'/modules/Directory/styles.css');
 });
 
