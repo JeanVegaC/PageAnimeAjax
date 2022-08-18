@@ -1,40 +1,40 @@
-*{
+* {
     box-sizing: border-box;
-    padding:0;
+    padding: 0;
     margin: 0;
     font-family: var(--font-main);
 }
 
-img{
+img {
     height: 100%;
     width: 100%;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-input{
+input {
     border: none;
     color: #000;
 }
 
-body{
+body {
     background-color: #000;
     color: #fff;
 }
 
-:root{
-    --color-main:#222;
+:root {
+    --color-main: #222;
     /* --color-main:#444; */
 
-    --color-second:#333;
+    --color-second: #333;
     --color-third: #c91619;
-    --color-dark:#000;
+    --color-dark: #000;
     /*
     --color-hover:;
     --color-active:; */
@@ -44,14 +44,15 @@ body{
 
 /*REUSABLES CLASESS*/
 
-.container{
+.container {
     padding: 1rem 2rem;
-    
+
 }
+
 /* ============== NAV ================ */
 
 
-.nav{
+.nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -63,30 +64,30 @@ body{
     /* padding: 14px; */
 }
 
-.nav div{
+.nav div {
     height: 100%;
 }
 
-.nav-logo{
+.nav-logo {
     display: flex;
     width: 70px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 
-.nav-logo i{
+.nav-logo i {
     color: #fff;
 }
 
-.nav-links{
+.nav-links {
     width: 70%;
     transition: .4s;
 }
 
-.links{
+.links {
     display: flex;
     align-items: center;
     height: 100%;
@@ -94,7 +95,7 @@ body{
     justify-content: end;
 }
 
-.link{
+.link {
     /* position: relative; */
     height: 100%;
     min-width: 15%;
@@ -104,7 +105,7 @@ body{
     /* padding:0 10px */
 }
 
-.link a{
+.link a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,15 +114,15 @@ body{
     color: #fff;
 }
 
-.link i{
+.link i {
     margin: 0 6px;
 }
 
-.link:hover{
+.link:hover {
     background-color: var(--color-second);
 }
 
-.nav-search{
+.nav-search {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -131,7 +132,7 @@ body{
 
 }
 
-.nav-search input{
+.nav-search input {
     border-radius: 1rem;
     height: 70%;
     width: 50%;
@@ -141,31 +142,31 @@ body{
     color: var(--color-dark);
 }
 
-.nav-search input:focus{
+.nav-search input:focus {
     width: 100%;
     background-color: #fff;
 }
 
-.nav-search i{
+.nav-search i {
     text-align: center;
     width: 30%;
     cursor: pointer;
 }
 
-.btn-nav{
+.btn-nav {
     display: none;
-    
+
 }
 
-.link-active{
+.link-active {
     color: var(--color-third);
 }
 
 /* NAV RESPONSIVE*/
 
-@media screen and (max-width:770px){
-    
-    .nav-links{
+@media screen and (max-width:770px) {
+
+    .nav-links {
         position: fixed;
         height: min-content !important;
         bottom: 80px;
@@ -173,16 +174,16 @@ body{
         right: -200px;
     }
 
-    .links{
+    .links {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 200px;
-        
+
     }
 
-    .link{
+    .link {
         width: 100%;
         height: 50px;
         background-color: var(--color-main);
@@ -190,24 +191,24 @@ body{
         margin: .4rem 0;
     }
 
-    .btn-nav{
-    display: flex;
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    background-color: #444;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    width: 40px;
-    height: 40px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: .4s;
-    z-index: 30;
+    .btn-nav {
+        display: flex;
+        position: fixed;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        background-color: #444;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: .4s;
+        z-index: 30;
     }
 
-    .btn-nav i{
+    .btn-nav i {
         position: absolute;
         opacity: 0;
         display: flex;
@@ -217,57 +218,58 @@ body{
         width: 100%;
     }
 
-    .btn-nav:active{
+    .btn-nav:active {
         transform: rotate(360deg);
     }
 
-    .btn-active{
+    .btn-active {
         opacity: 1 !important;
     }
 
-    .show-nav{
+    .show-nav {
         right: 10px;
         transition: .4s;
-        z-index:30;
+        z-index: 30;
     }
 }
 
-@media screen and (max-width:450px){
-    
-    .container{
+@media screen and (max-width:450px) {
+
+    .container {
         padding: 20px;
     }
 
     .home-added,
-    .home-emision{
+    .home-emision {
         padding: 0 !important;
     }
+
     .home-container,
-    .home-emision{
+    .home-emision {
         margin: 0 !important;
     }
 
     .list-added,
-    .list-emision{
+    .list-emision {
         margin: 0 !important;
     }
-    
+
 }
 
 
 
-.header-main{
+.header-main {
     margin: 1rem 0;
 }
 
-.list-anime{
+.list-anime {
     display: flex;
     justify-content: space-evenly;
     margin: 1rem 0 0 1rem;
     flex-wrap: wrap;
 }
 
-.anime{
+.anime {
     display: flex;
     position: relative;
     justify-content: center;
@@ -276,22 +278,22 @@ body{
     margin: 0 1rem 1rem 1rem;
 }
 
-.anime h4{
+.anime h4 {
     position: absolute;
     bottom: 20px;
     text-align: center;
     width: 100%;
     z-index: 10;
-    padding:0 4px;
-    
+    padding: 0 4px;
+
 }
 
-.anime img{
+.anime img {
     object-fit: cover;
     object-position: center 15%;
 }
 
-.anime-overlay{
+.anime-overlay {
     display: flex;
     justify-content: center;
     position: absolute;
@@ -301,52 +303,52 @@ body{
     opacity: 0;
     transition: .4s;
     z-index: 0;
-    
+
 }
 
-.anime:hover .anime-overlay{
+.anime:hover .anime-overlay {
     opacity: .800;
     cursor: pointer;
-} 
+}
 
-.anime-overlay i{
+.anime-overlay i {
     position: absolute;
     right: 10px;
     top: 10px;
     font-size: 1.4rem;
 }
 
-.anime-favorite{
+.anime-favorite {
     color: red;
 }
 
 /* STYLES FOR LIST CAPS */
 
-.cap{
+.cap {
     background-color: var(--color-main);
     opacity: .725;
 }
 
-.link-cap{
+.link-cap {
     display: flex;
     width: 100%;
     height: 50px;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px; 
+    padding: 0 20px;
     margin: 10px 0;
     cursor: pointer;
 }
 
-.link-cap span{
+.link-cap span {
     color: #fff;
 }
 
-.link-cap i{
+.link-cap i {
     display: none;
 }
 
-.cap-visto{
+.cap-visto {
     display: inline !important;
     font-size: 1.2rem;
     color: #fff;
@@ -357,21 +359,21 @@ body{
 /* MEDIA PLAYER */
 
 /* TITLE */
-.media-info{
+.media-info {
     margin: 1rem 0;
 }
 
 
 /* REPRODUCTOR*/
-.media-player{
-    display:flex;
+.media-player {
+    display: flex;
     width: 80%;
     height: 630px;
     margin: 1rem auto;
     justify-content: center;
 }
 
-.media-player img{
+.media-player img {
     object-fit: cover;
 
 }
@@ -379,30 +381,30 @@ body{
 
 /* DIRECTORY */
 
-.gender-container{
+.gender-container {
     margin: 1rem 0 0 0;
 }
 
-.list-gender{
+.list-gender {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.gender{
-    padding:4px 10px;
+.gender {
+    padding: 4px 10px;
     background-color: var(--color-second);
     border-radius: 1rem;
     margin: 5px .5rem;
     cursor: pointer;
 }
 
-.gender-active{
+.gender-active {
     background-color: var(--color-third);
 }
 
-.anime:hover .anime-overlay{
+.anime:hover .anime-overlay {
     opacity: .800;
     cursor: pointer;
     z-index: 20;
@@ -410,46 +412,46 @@ body{
 
 /* STYLES FOR PAGE WITH JUST ANIME*/
 
-.anime-container{
+.anime-container {
     display: flex;
-    width: 100%; 
+    width: 100%;
 }
 
-.anime-img{
+.anime-img {
     z-index: 10;
-    
+
 }
 
 @media screen and (max-width:807px) {
-  .anime-container{
-    flex-direction: column;
-  }  
+    .anime-container {
+        flex-direction: column;
+    }
 
-  .anime-container > .anime-img{
-    min-width: 100% !important;
-  }
-  
+    .anime-container>.anime-img {
+        min-width: 100% !important;
+    }
+
 }
 
-.anime-container > .anime-img{
+.anime-container>.anime-img {
     display: flex;
     height: 400px;
     min-width: 300px;
     max-width: 300px;
 }
 
-.anime-img img{
+.anime-img img {
     object-fit: cover;
 }
 
-.anime-info{
+.anime-info {
     display: flex;
     flex-direction: column;
-    padding:20px;
- 
+    padding: 20px;
+
 }
 
-.anime-info-overlay{
+.anime-info-overlay {
     display: flex;
     width: 100%;
     height: 85%;
@@ -461,26 +463,26 @@ body{
     background-size: cover;
 }
 
-.anime-info > .anime-name{
+.anime-info>.anime-name {
     font-size: 2.5rem;
     margin: .7rem 0;
 }
 
-.anime-info h3{
+.anime-info h3 {
     letter-spacing: 2.4px;
     color: var(--color-third);
 }
 
-.info-bottom{
+.info-bottom {
     margin-top: 1rem;
 }
 
-.list-genders{
+.list-genders {
     display: inline-flex;
     flex-wrap: wrap;
 }
 
-.list-genders li{
+.list-genders li {
     display: inline;
     /* border:2px solid var(--color-third); */
     color: var(--color-third);
@@ -489,14 +491,14 @@ body{
     margin: 10px;
 }
 
-.anime-caps{
+.anime-caps {
     position: relative;
     z-index: 20;
 }
 
 /* EMISION */
 
-.list-header{
+.list-header {
     display: flex;
     padding: 5px 10px;
     justify-content: space-between;
@@ -504,17 +506,17 @@ body{
     cursor: pointer;
 }
 
-.list-header i{
+.list-header i {
     font-size: 2rem;
-    transition: .4s; 
+    transition: .4s;
 }
 
-.list-anime{
-    display: none;
+.list-anime {
+    /* display: none; */
     height: 0;
 }
 
-.list-active .list-anime{
+.list-active .list-anime {
     background-color: var(--color-main);
     display: flex;
     flex-wrap: wrap;
@@ -522,13 +524,13 @@ body{
     justify-content: center;
 }
 
-.list-active i{
+.list-active i {
     transform: rotate(180deg);
     height: 100%;
 }
 
 
-.list-active .list-header{
+.list-active .list-header {
     background-color: var(--color-third);
 }
 
@@ -536,13 +538,13 @@ body{
 
 /* NOTICES */
 
-.notice-list{
-    display:flex;
+.notice-list {
+    display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.notice{
+.notice {
     display: flex;
     min-width: 100%;
     height: 300px;
@@ -550,29 +552,29 @@ body{
     margin: 1rem 0;
 }
 
-.notice-reverse{
+.notice-reverse {
     flex-direction: row-reverse;
 }
 
-.notice-img{
+.notice-img {
     height: 100%;
     min-width: 240px;
     max-width: 300px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
-.notice-description{
-    padding:20px;
+.notice-description {
+    padding: 20px;
 }
 
-@media screen and (max-width:770px){
-    .notice{
+@media screen and (max-width:770px) {
+    .notice {
         flex-direction: column;
-        height:25%;
+        height: 25%;
 
     }
 
-    .notice-img{
+    .notice-img {
         max-width: 100%;
         max-height: 300px;
     }
