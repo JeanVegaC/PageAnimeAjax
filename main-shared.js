@@ -146,7 +146,7 @@ const getAnimes = async (gender) => {
         
         if (gender == undefined) {
 
-            let res = await fetch('page-anime-ajax.vercel.app/api/animes'),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 
                 console.log('Entre asd')
@@ -179,8 +179,8 @@ const getAnimes = async (gender) => {
  const $mediaInfo = d.querySelector('.media-info');
         
        
-            // let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
-            let res = await fetch('page-anime-ajax.vercel.app/api/animes'),
+            
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 
                 console.log('Entre');

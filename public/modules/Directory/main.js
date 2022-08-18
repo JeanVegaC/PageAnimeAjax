@@ -76,7 +76,7 @@ const getAnimes = async (gender) => {
                 return res;
             }
 
-            json.forEach( async e => {
+            json.animes.forEach( async e => {
                 let haveGen = haveGender(e.gender,gender);
                 if (haveGen == true) {
 
