@@ -38,6 +38,10 @@ app.get('/Directory', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/index.html');
 });
 
+app.get('/public/modules/Directory/styles.css', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Directory/styles.css');
+});
+
 app.get('/Directory/styles.css', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/styles.css');
 });
