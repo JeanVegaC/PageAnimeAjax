@@ -31,26 +31,24 @@ app.get('/includes-html.js', (req,res)=>{
 // SECTIONS
 
 app.get('/Emision', (req,res)=>{
-    res.sendFile(__dirname +'/modules/Emision/index.html');
+    res.sendFile(__dirname +'/public/modules/Emision/index.html');
 });
 
 app.get('/Directory', (req,res)=>{
-    res.sendFile(__dirname +'/modules/Directory/index.html');
+    res.sendFile(__dirname +'/public/modules/Directory/index.html');
 });
 
 app.get('/Directory/styles.css', (req,res)=>{
-    res.sendFile(__dirname +'/modules/Directory/styles.css');
+    res.sendFile(__dirname +'/public/modules/Directory/styles.css');
 });
 
 app.get('/Favorites', (req,res)=>{
-    res.sendFile(__dirname +'/modules/Favorites/index.html');
+    res.sendFile(__dirname +'/public/modules/Favorites/index.html');
 });
 
 app.get('/Notices', (req,res)=>{
-    res.sendFile(__dirname +'/modules/Notices/index.html');
+    res.sendFile(__dirname +'/public/modules/Notices/index.html');
 });
-
-
 
 
 app.use(express.static('public'));
