@@ -42,6 +42,10 @@ app.get('/public/modules/Directory/styles.css', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/styles.css');
 });
 
+app.get('/public/modules/Directory/main.js', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Directory/main.js');
+});
+
 app.get('/Directory/styles.css', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/styles.css');
 });
