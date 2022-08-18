@@ -176,7 +176,7 @@ const getAnimes = async (gender) => {
             
  const $mediaInfo = d.querySelector('.media-info');
         
-
+       
             let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 

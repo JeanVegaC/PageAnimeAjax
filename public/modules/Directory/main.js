@@ -34,7 +34,7 @@ const getAnimes = async (gender) => {
         
         if (gender == undefined) {
 
-            let res = await fetch('http://localhost:3000/animes'),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 
             json.forEach(e => {

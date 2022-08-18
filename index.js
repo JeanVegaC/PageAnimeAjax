@@ -8,9 +8,9 @@ app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/styles.css', (req,res)=>{
-    res.sendFile(__dirname + 'styles.css');
-});
+// app.get('/styles.css', (req,res)=>{
+//     res.sendFile(__dirname + 'styles.css');
+// });
 
 app.get('/styles-shared.css', (req,res)=>{
     res.sendFile(__dirname +'/styles-shared.css');
@@ -54,7 +54,7 @@ app.get('/Notices', (req,res)=>{
 
 
 app.use(express.static('public'));
-app.use(express.static('modules'));
+// app.use(express.static('modules'));
 
 //SETTING
 app.set('port', process.env.PORT || 3000);
