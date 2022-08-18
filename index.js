@@ -52,7 +52,6 @@ app.get('/Notices', (req,res)=>{
 
 
 app.use(express.static('public'));
-// app.use(express.static('modules'));
 
 //SETTING
 app.set('port', process.env.PORT || 3000);
