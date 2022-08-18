@@ -180,6 +180,8 @@ const getAnimes = async (gender) => {
             let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
                 json = await res.json();
 
+                console.log(json);
+
             const haveGender = (e,gen)=>{
                 let res;
                 e.forEach(a=>{
