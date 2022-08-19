@@ -1,5 +1,6 @@
 [
         {
+            "day":"Monday",
             "name":"Bokutachi wa Benkyō ga Dekinai",
             "img":"https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
             "url":"https://1.bp.blogspot.com/-K5YtwSR_wUs/XRa9N7u-T2I/AAAAAAAAUVQ/5y57QmNCGxMjw8g9GIFclU1aGkLv0HmBACLcBGAs/s1600/Bokutachi-wa-Benkyou-ga-Dekinai-1.png",
@@ -7,6 +8,7 @@
             "id":1
         },
         {
+            "day":"Tuesday",
             "name":"Noragami",
             "img":"https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
             "url":"https://img1.ak.crunchyroll.com/i/spire2/e81af69b67788b5bfda50b2789bbc7ee1481243074_main.jpg",
@@ -14,6 +16,7 @@
             "id":2
         },
         {
+            "day":"Wednesday",
             "name":"Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
             "img":"https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
             "url":"https://somoskudasai.com/wp-content/uploads/2018/10/4-11.jpg",
@@ -22,6 +25,7 @@
 
         },
         {
+            "day":"Thursday",
             "name":"Nazo no Kanojo X",
             "img":"https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
             "url":"https://img1.ak.crunchyroll.com/i/spire3/69d6d92c68c58654465f62c1c903d9911505343039_main.jpg",
@@ -29,6 +33,7 @@
             "id":4
         },
         {
+            "day":"Friday",
             "name":"Kaguya-sama wa Kokurasetai -Ultra Romantic-",
             "img":"https://ramenparados.com/wp-content/uploads/2021/05/img_main02-300x395.jpeg",
             "url":"https://ramenparados.com/wp-content/uploads/2021/05/img_main02-300x395.jpeg",
@@ -36,6 +41,7 @@
             "id":7
         },
         {
+            "day":"Saturday",
             "name":"Komi-san wa, Comyushou desu. 2nd Season",
             "img":"https://somoskudasai.com/wp-content/uploads/2022/03/visual_2.jpg",
             "url":"https://somoskudasai.com/wp-content/uploads/2022/03/visual_2.jpg",
@@ -43,6 +49,7 @@
             "id":6
         },
         {
+            "day":"Sunday",
             "name":"Golden Time",
             "img":"https://img1.ak.crunchyroll.com/i/spire4/fc8938a7d556f9068bb8ed327c6c56351380569594_full.jpg",
             "url":"https://img1.ak.crunchyroll.com/i/spire4/fc8938a7d556f9068bb8ed327c6c56351380569594_full.jpg",
@@ -50,6 +57,7 @@
             "id":5
         },
         {
+            "day":"Monday",
             "name":"SPY x FAMILY",
             "img":"https://img1.ak.crunchyroll.com/i/spire2/dd4cb19f0248492a47a3f4c74d1f5b0d1646497812_main.jpg",
             "url":"https://img1.ak.crunchyroll.com/i/spire2/dd4cb19f0248492a47a3f4c74d1f5b0d1646497812_main.jpg",
