@@ -12,7 +12,7 @@ router.get('/', (req,res)=>{
     res.send(animes);
 })
 
-router.get('/:id', async(req,res)=>{  
+router.get('/id/:id', async(req,res)=>{  
     
 function getAnimeId (id){
     return(
