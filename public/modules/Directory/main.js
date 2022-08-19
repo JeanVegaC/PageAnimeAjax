@@ -171,7 +171,13 @@ const getAnime = async e=>{
 
                 $infoFragment.appendChild($infoClone);
                         
-                $animeInfo.innerHTML = await '';
+                if($animeInfo == null){
+                    const $animeInfo = await d.querySelector('.anime-info');
+                    $animeInfo.innerHTML = await ' ';
+                    await $animeInfo.appendChild($infoFragment);
+                }else{
+                    $animeInfo.innerHTML = await ' ';
+                }
     
                 await $animeInfo.appendChild($infoFragment);
             
