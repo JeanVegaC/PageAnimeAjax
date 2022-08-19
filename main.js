@@ -2,7 +2,7 @@
 /* ============== HOME ================== */
 
 /* FETCH ANIME ADDED */
-{
+
     const $addedTemplate = d.getElementById("added-template").content,
         $addedFragment = d.createDocumentFragment(),
         $addedList = d.querySelector(".list-added"),
@@ -14,8 +14,7 @@
         try {
 
 
-            // let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/added'),
-            let res = await fetch('http://localhost:3000/api/animes/added'),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/added'),
                 json = await res.json();
 
                 console.log(json);
@@ -39,6 +38,7 @@
             console.log("Hubo un error, htmlHome" + e);
         }
     };
+    
     const getEmision = async () => {
         try {
 
@@ -82,6 +82,3 @@
 
     })
 
-
-
-}

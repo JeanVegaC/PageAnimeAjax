@@ -1,8 +1,5 @@
-/* ==== GENERAL ==== */
-
-
 /* ========================= DIRECTORY HEADER / GENDERS =================  */
-{
+
     const $genders = d.querySelectorAll('.gender');
     $genders.forEach(e => {
     e.addEventListener('click', () => {
@@ -14,7 +11,7 @@
     })
 })
 
-}
+
 /* ============================ DIRECTORY BODY =======================  */
 
 /* GET ALL ANIMES */
@@ -62,10 +59,7 @@ const getAnimes = async (gender) => {
 
         } else {
             
- const $mediaInfo = d.querySelector('.media-info');
-        
-
-            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/'),
                 json = await res.json();
 
             const haveGender = (e,gen)=>{
