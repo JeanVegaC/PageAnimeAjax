@@ -173,7 +173,7 @@ const getAnime = async e=>{
                         
                 if($animeInfo == null){
                     const $animeInfo = await d.querySelector('.anime-info');
-                    setTimeout(e=>{
+                    setTimeout(async e=>{
                         $animeInfo.innerHTML = await ' ';
                         await $animeInfo.appendChild($infoFragment);
                     },1000)
@@ -205,9 +205,9 @@ const getAnime = async e=>{
 
         if($listGender == null){
             const $listGender = await d.querySelector('.list-genders');
-            setTimeout(e=>{
-                $listGender.innerHTML = ' ';
-                $listGender.appendChild($genderFragment);
+            setTimeout(async e=>{
+                $listGender.innerHTML = await ' ';
+                await $listGender.appendChild($genderFragment);
             },1000)
         }else{
             $listGender.innerHTML = ' ';
@@ -246,8 +246,10 @@ const getAnime = async e=>{
 
         if($listCaps == null){
             const $listCaps = d.querySelector('.list-caps');
-            $listCaps.innerHTML = ' ';
-            $listCaps.appendChild($capFragment);
+            setTimeout(async e=>{
+                $listCaps.innerHTML = await ' ';
+                await $listCaps.appendChild($capFragment);
+            },1000);
         }else{
             $listCaps.innerHTML = ' ';
             $listCaps.appendChild($capFragment);
