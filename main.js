@@ -14,9 +14,11 @@
         try {
 
 
-            let res = await fetch("Json/added.json"),
+            // let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/added'),
+            let res = await fetch('http://localhost:3000/api/animes/added'),
                 json = await res.json();
 
+                console.log(json);
             json.forEach(e => {
                 $addedTemplate.querySelector(".added-img").src = e.img;
                 $addedTemplate.querySelector(".added-name").textContent = e.name;
@@ -40,8 +42,7 @@
     const getEmision = async () => {
         try {
 
-
-            let res = await fetch("Json/emision.json"),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/emision'),
                 json = await res.json();
 
             json.forEach(e => {

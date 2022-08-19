@@ -2,8 +2,9 @@
 
 
 /* ========================= DIRECTORY HEADER / GENDERS =================  */
-const $genders = d.querySelectorAll('.gender');
-$genders.forEach(e => {
+{
+    const $genders = d.querySelectorAll('.gender');
+    $genders.forEach(e => {
     e.addEventListener('click', () => {
         $genders.forEach(a => {
             a.classList.remove('gender-active');
@@ -13,6 +14,7 @@ $genders.forEach(e => {
     })
 })
 
+}
 /* ============================ DIRECTORY BODY =======================  */
 
 /* GET ALL ANIMES */
@@ -32,7 +34,7 @@ const getAnimes = async (gender) => {
         
         if (gender == undefined) {
 
-            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes'),
+            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/'),
                 json = await res.json();
 
             json.animes.forEach(e => {
@@ -264,70 +266,72 @@ $genders.forEach(e => {
 
 /* APPLY ANIME FAVORITE */
 
-const addFavorite = async e => {
-    try {
-        let favorite;
-
-        if (e.dataset.favorite == "true") {
-            let options = {
-                method: "PUT",
-                headers: { "Content-type": "application/json; charset=utf-8" },
-                body: JSON.stringify({
-                    name: e.dataset.name,
-                    img: e.querySelector('.anime-img').src,
-                    gender: JSON.parse(e.dataset.gender),
-                    favorite: "false",
-                    caps: JSON.parse(e.dataset.caps),
-                    sinopsis: e.dataset.sinopsis
-                })
+{
+    const addFavorite = async e => {
+        try {
+            let favorite;
+    
+            if (e.dataset.favorite == "true") {
+                let options = {
+                    method: "PUT",
+                    headers: { "Content-type": "application/json; charset=utf-8" },
+                    body: JSON.stringify({
+                        name: e.dataset.name,
+                        img: e.querySelector('.anime-img').src,
+                        gender: JSON.parse(e.dataset.gender),
+                        favorite: "false",
+                        caps: JSON.parse(e.dataset.caps),
+                        sinopsis: e.dataset.sinopsis
+                    })
+                }
+    
+                let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
+    
+                options = {
+                    method: "DELETE",
+                    headers: { "Content-type": "application/json; charset=utf-8" },
+                }
+    
+                res = await fetch(`http://localhost:3000/favorites/${e.dataset.id}`, options)
+    
+    
+            } else {
+                let options = {
+                    method: "PUT",
+                    headers: { "Content-type": "application/json; charset=utf-8" },
+                    body: JSON.stringify({
+                        name: e.dataset.name,
+                        img: e.querySelector('.anime-img').src,
+                        gender: JSON.parse(e.dataset.gender),
+                        favorite: "true",
+                        caps: JSON.parse(e.dataset.caps),
+                        sinopsis: e.dataset.sinopsis
+                    })
+                }
+    
+                let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
+    
+                options = {
+                    method: "POST",
+                    headers: { "Content-type": "application/json; charset=utf-8" },
+                    body: JSON.stringify({
+                        name: e.dataset.name,
+                        img: e.querySelector('.anime-img').src,
+                        gender: JSON.parse(e.dataset.gender),
+                        favorite: e.dataset.favorite,
+                        caps: JSON.parse(e.dataset.caps),
+                        sinopsis: e.dataset.sinopsis,
+                        id: parseInt(e.dataset.id)
+                    })
+                }
+    
+                res = await fetch("http://localhost:3000/favorites", options),
+                    json = await res.json()
             }
-
-            let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
-
-            options = {
-                method: "DELETE",
-                headers: { "Content-type": "application/json; charset=utf-8" },
-            }
-
-            res = await fetch(`http://localhost:3000/favorites/${e.dataset.id}`, options)
-
-
-        } else {
-            let options = {
-                method: "PUT",
-                headers: { "Content-type": "application/json; charset=utf-8" },
-                body: JSON.stringify({
-                    name: e.dataset.name,
-                    img: e.querySelector('.anime-img').src,
-                    gender: JSON.parse(e.dataset.gender),
-                    favorite: "true",
-                    caps: JSON.parse(e.dataset.caps),
-                    sinopsis: e.dataset.sinopsis
-                })
-            }
-
-            let res = await fetch(`http://localhost:3000/animes/${e.dataset.id}`, options)
-
-            options = {
-                method: "POST",
-                headers: { "Content-type": "application/json; charset=utf-8" },
-                body: JSON.stringify({
-                    name: e.dataset.name,
-                    img: e.querySelector('.anime-img').src,
-                    gender: JSON.parse(e.dataset.gender),
-                    favorite: e.dataset.favorite,
-                    caps: JSON.parse(e.dataset.caps),
-                    sinopsis: e.dataset.sinopsis,
-                    id: parseInt(e.dataset.id)
-                })
-            }
-
-            res = await fetch("http://localhost:3000/favorites", options),
-                json = await res.json()
+    
+        } catch (e) {
+            console.log('Hubo un error en main.js/Directory: ' + e)
         }
-
-    } catch (e) {
-        console.log('Hubo un error en main.js/Directory: ' + e)
     }
+    
 }
-
