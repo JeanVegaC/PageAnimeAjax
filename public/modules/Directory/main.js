@@ -173,13 +173,15 @@ const getAnime = async e=>{
                         
                 if($animeInfo == null){
                     const $animeInfo = await d.querySelector('.anime-info');
-                    $animeInfo.innerHTML = await ' ';
-                    await $animeInfo.appendChild($infoFragment);
+                    setTimeout(e=>{
+                        $animeInfo.innerHTML = await ' ';
+                        await $animeInfo.appendChild($infoFragment);
+                    },1000)
                 }else{
                     $animeInfo.innerHTML = await ' ';
+                    await $animeInfo.appendChild($infoFragment);
                 }
     
-                await $animeInfo.appendChild($infoFragment);
             
 
         /* ANIME INFO F */
@@ -201,9 +203,17 @@ const getAnime = async e=>{
 
         const $listGender = await d.querySelector('.list-genders');
 
-        while ($listGender.firstChild) {
-            $listGender.removeChild($listGender.firstChild);
+        if($listGender == null){
+            const $listGender = await d.querySelector('.list-genders');
+            setTimeout(e=>{
+                $listGender.innerHTML = ' ';
+                $listGender.appendChild($genderFragment);
+            },1000)
+        }else{
+            $listGender.innerHTML = ' ';
+            $listGender.appendChild($genderFragment);
         }
+        
 
         $listGender.appendChild($genderFragment);
 
@@ -234,11 +244,19 @@ const getAnime = async e=>{
 
         const $listCaps = d.querySelector('.list-caps');
 
-        while ($listCaps.firstChild) {
-            $listCaps.removeChild($listCaps.firstChild);
+        if($listCaps == null){
+            const $listCaps = d.querySelector('.list-caps');
+            $listCaps.innerHTML = ' ';
+            $listCaps.appendChild($capFragment);
+        }else{
+            $listCaps.innerHTML = ' ';
+            $listCaps.appendChild($capFragment);
         }
 
-        $listCaps.appendChild($capFragment);
+
+        // while ($listCaps.firstChild) {
+        //     $listCaps.removeChild($listCaps.firstChild);
+        // }
 
         /* EVENT FOR GO MEDIA TO CAPS */
     const $caps = document.querySelectorAll('.cap');
