@@ -4,13 +4,15 @@ const morgan = require('morgan');
 
 // D:\\Documentos\\Codigos\\Proyectos\\Page Anime-AJAX\\index.html
 
+// ====== HOME ======
+
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/index.html');
 });
 
-// app.get('/styles.css', (req,res)=>{
-//     res.sendFile(__dirname + 'styles.css');
-// });
+app.get('/styles.css', (req,res)=>{
+    res.sendFile(__dirname + '/styles.css');
+});
 
 app.get('/styles-shared.css', (req,res)=>{
     res.sendFile(__dirname +'/styles-shared.css');
@@ -44,10 +46,6 @@ app.get('/public/modules/Directory/styles.css', (req,res)=>{
 
 app.get('/public/modules/Directory/main.js', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/main.js');
-});
-
-app.get('/Directory/styles.css', (req,res)=>{
-    res.sendFile(__dirname +'/public/modules/Directory/styles.css');
 });
 
 app.get('/Favorites', (req,res)=>{
