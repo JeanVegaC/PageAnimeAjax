@@ -11,7 +11,6 @@ const getAnimes = async (day) => {
     let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/added'),
         json = await res.json();
 
-    console.log(json);
     json.forEach((e) => {
         if (e.day == day) {
             $addedTemplate.querySelector(".anime-img").src = e.img;
@@ -86,4 +85,3 @@ const activeList = (day) => {
 
 activeList(day);
 
-console.log("Entre");
