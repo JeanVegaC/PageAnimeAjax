@@ -86,12 +86,6 @@ app.get('/public/modules/Notices/main.js', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Notices/main.js');
 });
 
-
-
-
-
-
-
 app.use(express.static('public'));
 
 //SETTING

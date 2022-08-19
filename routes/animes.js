@@ -12,9 +12,23 @@ router.get('/', (req,res)=>{
     res.send(animes);
 })
 
-// router.get('/animes', (req,res)=>{  
-//     res.send(animes.animes);
-// })
+router.get('/:id', async(req,res)=>{  
+    
+function getAnimeId (id){
+    return(
+        new Promise((res,rej)=>{
+            const animeId = animes.animes.find(ani => ani.id == id);
+            res(animeId);  
+        })
+    )
+}
+
+await(getAnimeId(req.params.id))
+.then(e =>{res.json(e);})
+
+
+}) 
+
 
 router.get('/added', (req,res)=>{  
     res.send(added);

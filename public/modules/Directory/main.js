@@ -31,7 +31,8 @@ const getAnimes = async (gender) => {
         
         if (gender == undefined) {
 
-            let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/'),
+            // let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/'),
+            let res = await fetch('http://localhost:3000/api/animes/'),
                 json = await res.json();
 
             json.animes.forEach(e => {
@@ -143,8 +144,8 @@ getAnimes();
 /* GET ANIME WITH ID */
 
 const getAnime = async e=>{
-    try {
-
+   
+        
         const $infoTemplate = d.getElementById('info-template').content,
          $infoFragment = d.createDocumentFragment(),
          $genderTemplate = d.getElementById('gender-template').content,
@@ -152,10 +153,12 @@ const getAnime = async e=>{
          $capTemplate = d.getElementById('cap-template').content,
          $capFragment = d.createDocumentFragment();
 
-    /* FETCH FOR ANIME INFO */
-        let res = await fetch(`http://localhost:3000/animes/${e}`),
-        json = await res.json();
+         
 
+    /* FETCH FOR ANIME INFO */
+        let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e}`),
+        json = await res.json();
+        console.log(json);
                 $infoTemplate.querySelector('#anime-img').src = json.img;
                 $infoTemplate.querySelector('.anime-name').textContent = json.name;
                 $infoTemplate.querySelector('.anime-sinopsis').textContent = json.sinopsis;
@@ -164,17 +167,17 @@ const getAnime = async e=>{
                 
                
                 let $infoClone = d.importNode($infoTemplate, true);
+
+                const $animeInfo = await d.querySelector('.anime-info');
+
                 $infoFragment.appendChild($infoClone);
                         
-        const $animeInfo = d.querySelector('.anime-info');
+                $animeInfo.innerHTML = await '';
+    
+                await $animeInfo.appendChild($infoFragment);
+            
 
-        while ($animeInfo.firstChild) {
-            $animeInfo.removeChild($animeInfo.firstChild);
-        }
-
-        $animeInfo.appendChild($infoFragment);
-
-        /* ANIME INFO OVERLAY */
+        /* ANIME INFO F */
 
         const animeInfoOverlay = d.querySelector('.anime-info-overlay');
                 animeInfoOverlay.setAttribute(`style`,`background-image: url('${json.img}')`);
@@ -182,7 +185,7 @@ const getAnime = async e=>{
 
     /* FETCH FOR ANIME GENDER */       
 
-        res = await fetch(`http://localhost:3000/animes/${e}`),
+        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e}`),
         json = await res.json();
         
         json.gender.forEach(e=>{
@@ -191,7 +194,7 @@ const getAnime = async e=>{
                 $genderFragment.appendChild($genderClone);
         })
 
-        const $listGender = d.querySelector('.list-genders');
+        const $listGender = await d.querySelector('.list-genders');
 
         while ($listGender.firstChild) {
             $listGender.removeChild($listGender.firstChild);
@@ -201,7 +204,7 @@ const getAnime = async e=>{
 
         /* FETCH FOR ANIME CAPS */
 
-        res = await fetch(`http://localhost:3000/animes/${e}`),
+        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${e}`),
         json = await res.json();
         
         
@@ -235,9 +238,7 @@ const getAnime = async e=>{
         /* EVENT FOR GO MEDIA TO CAPS */
     const $caps = document.querySelectorAll('.cap');
 
-    } catch (e) {
-        console.log('Hubo un error en: main.js/Directory '+e);
-    }
+
 }
 
 /* SHOW ANIMES WITH FILTER */
