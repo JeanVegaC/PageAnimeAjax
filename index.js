@@ -44,6 +44,13 @@ app.get('/public/modules/Directory/main.js', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/main.js');
 });
 
+app.get('/public/shared/anime.html', (req,res)=>{
+    res.sendFile(__dirname +'/public/shared/anime.html');
+});
+
+
+
+
 /* = EMISION = */
 
 app.get('/Emision', (req,res)=>{
