@@ -30,11 +30,7 @@ app.get('/includes-html.js', (req,res)=>{
     res.sendFile(__dirname +'/includes-html.js');
 });
 
-// SECTIONS
-
-app.get('/Emision', (req,res)=>{
-    res.sendFile(__dirname +'/public/modules/Emision/index.html');
-});
+/* = DIRECTORY = */
 
 app.get('/Directory', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/index.html');
@@ -48,13 +44,52 @@ app.get('/public/modules/Directory/main.js', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Directory/main.js');
 });
 
+/* = EMISION = */
+
+app.get('/Emision', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Emision/index.html');
+});
+
+app.get('/public/modules/Emision/styles.css', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Emision/styles.css');
+});
+
+app.get('/public/modules/Emision/main.js', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Emision/main.js');
+});
+
+/* = FAVORITES = */
+
 app.get('/Favorites', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Favorites/index.html');
 });
 
+app.get('/public/modules/Favorites/styles.css', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Favorites/styles.css');
+});
+
+app.get('/public/modules/Favorites/main.js', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Favorites/main.js');
+});
+
+/* = NOTICES = */
+
 app.get('/Notices', (req,res)=>{
     res.sendFile(__dirname +'/public/modules/Notices/index.html');
 });
+
+app.get('/public/modules/Notices/styles.css', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Notices/styles.css');
+});
+
+app.get('/public/modules/Notices/main.js', (req,res)=>{
+    res.sendFile(__dirname +'/public/modules/Notices/main.js');
+});
+
+
+
+
+
 
 
 app.use(express.static('public'));

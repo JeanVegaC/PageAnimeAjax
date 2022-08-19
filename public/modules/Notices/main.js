@@ -5,7 +5,7 @@
 
 const fa = async ()=>{
     try{
-        let res = await fetch("/Json/notice.json"),
+        let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/notice'),
         json = await res.json();
     
         const $noticeList = d.querySelector('.notice-list'),
