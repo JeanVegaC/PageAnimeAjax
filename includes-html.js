@@ -27,14 +27,7 @@ document.addEventListener("click", (e) => {
  
 
 
-    d.addEventListener('click',e=>{
-      
-
-      if(e.target.matches('.link-cap')){
-          mediaPlayer(e.target.dataset.id,e.target.dataset.cap);
-      }
-
-  })
+  
 
 
 

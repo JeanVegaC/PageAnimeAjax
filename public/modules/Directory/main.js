@@ -237,14 +237,15 @@ const getAnime = async e=>{
             $listCaps.appendChild($capFragment);
         }
 
-
-        // while ($listCaps.firstChild) {
-        //     $listCaps.removeChild($listCaps.firstChild);
-        // }
-
         /* EVENT FOR GO MEDIA TO CAPS */
     const $caps = document.querySelectorAll('.cap');
 
+    d.addEventListener('click',e=>{
+
+        if(e.target.matches('.link-cap')){
+            mediaPlayer(e.target.dataset.id,e.target.dataset.cap);
+        }
+    })
 
 }
 

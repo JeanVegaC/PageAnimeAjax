@@ -48,6 +48,10 @@ app.get('/public/shared/anime.html', (req,res)=>{
     res.sendFile(__dirname +'/public/shared/anime.html');
 });
 
+app.get('/public/shared/media.html', (req,res)=>{
+    res.sendFile(__dirname +'/public/shared/media.html');
+});
+
 
 
 
