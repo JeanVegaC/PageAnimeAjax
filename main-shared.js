@@ -31,7 +31,7 @@ const mediaPlayer = async (id,cap)=>{
          $mediaVideoFragment = d.createDocumentFragment();
         
         //FETCH FOR ANIME TITLE AND MEDIA 
-        let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${id}`),
+        let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/id/${id}`),
         json = await res.json();
         
 
