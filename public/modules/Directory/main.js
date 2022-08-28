@@ -11,7 +11,6 @@
     })
 })
 
-
 /* ============================ DIRECTORY BODY =======================  */
 
 /* GET ALL ANIMES */
@@ -31,6 +30,7 @@ const getAnimes = async (gender) => {
         
         if (gender == undefined) {
 
+            // let res = await fetch('http://localhost:3000/api/animes/'),
             let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/'),
                 json = await res.json();
 
@@ -59,6 +59,7 @@ const getAnimes = async (gender) => {
 
         } else {
             
+            // let res = await fetch('http://localhost:3000/api/animes/'),
             let res = await fetch('https://page-anime-ajax.vercel.app/api/animes/'),
                 json = await res.json();
 
@@ -121,17 +122,7 @@ const getAnimes = async (gender) => {
         //     })
         // })
 
-        d.addEventListener('click',e=>{
-            if(e.target.matches('.anime-overlay')){
-                getAnime(e.target.parentNode.dataset.id);
-                
-            }
-
-            if(e.target.matches('.link-cap')){
-                mediaPlayer(e.target.dataset.id,e.target.dataset.cap);
-            }
-
-        })
+       
 
     } catch (e) {
         console.log('Hubo un error en getAnimes/main.js: ' + e);
@@ -151,48 +142,38 @@ const getAnime = async e=>{
          $genderFragment = d.createDocumentFragment(),
          $capTemplate = d.getElementById('cap-template').content,
          $capFragment = d.createDocumentFragment();
-
          
 
     /* FETCH FOR ANIME INFO */
-        let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/id/${e}`),
+    // let res = await fetch(`http://localhost:3000/api/animes/id/${e}`),
+    let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/id/${e}`),
         json = await res.json();
-        console.log(json);
                 $infoTemplate.querySelector('#anime-img').src = json.img;
                 $infoTemplate.querySelector('.anime-name').textContent = json.name;
                 $infoTemplate.querySelector('.anime-sinopsis').textContent = json.sinopsis;
                 $infoTemplate.querySelector('.anime-name').textContent = json.name;
                 $infoTemplate.querySelector('.anime-state').textContent = json.state;
                 
-               
                 let $infoClone = d.importNode($infoTemplate, true);
-
-                const $animeInfo = await d.querySelector('.anime-info');
-
                 $infoFragment.appendChild($infoClone);
                         
-                if($animeInfo == null){
-                    const $animeInfo = await d.querySelector('.anime-info');
-                    setTimeout(async e=>{
-                        $animeInfo.innerHTML = await ' ';
-                        await $animeInfo.appendChild($infoFragment);
-                    },1000)
-                }else{
-                    $animeInfo.innerHTML = await ' ';
-                    await $animeInfo.appendChild($infoFragment);
-                }
-    
+                $animeInfo = d.querySelector('.anime-info');
+
+                $animeInfo.innerHTML = ' ';
+                $animeInfo.appendChild($infoFragment);
+                console.log('getAnime finished')
             
 
         /* ANIME INFO F */
 
-        const animeInfoOverlay = d.querySelector('.anime-info-overlay');
-                animeInfoOverlay.setAttribute(`style`,`background-image: url('${json.img}')`);
+        const $animeInfoOverlay = d.getElementById('info-template').content.querySelector('.anime-info-overlay');
+            $animeInfoOverlay.setAttribute(`style`,`background-image: url('${json.img}')`);
 
 
     /* FETCH FOR ANIME GENDER */       
 
-        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/id/${e}`),
+    // res = await fetch(`http://localhost:3000/api/animes/id/${e}`),
+    res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/id/${e}`),
         json = await res.json();
         
         json.gender.forEach(e=>{
@@ -202,6 +183,7 @@ const getAnime = async e=>{
         })
 
         const $listGender = await d.querySelector('.list-genders');
+        console.log($listGender);
 
         if($listGender == null){
             const $listGender = await d.querySelector('.list-genders');
