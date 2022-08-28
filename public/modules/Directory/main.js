@@ -166,7 +166,7 @@ const getAnime = async e=>{
 
         /* ANIME INFO F */
 
-        const $animeInfoOverlay = d.getElementById('info-template').content.querySelector('.anime-info-overlay');
+        const $animeInfoOverlay = d.querySelector('.anime-info-overlay');
             $animeInfoOverlay.setAttribute(`style`,`background-image: url('${json.img}')`);
 
 
