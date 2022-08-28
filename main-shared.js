@@ -33,7 +33,7 @@ const mediaPlayer = async (id,cap)=>{
         //FETCH FOR ANIME TITLE AND MEDIA 
         let res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/id/${id}`),
         json = await res.json();
-        
+        console.log(json);
 
         $templateMediaInfo.querySelector('.media-title').textContent = `${json.name} / Capitulo ${cap}`;
         $templateMediaVideo.querySelector('.media-video').src = json.caps[cap-1].url;
@@ -57,10 +57,7 @@ const mediaPlayer = async (id,cap)=>{
         
 
         const $mediaVideo = d.querySelector('.media-player');
-
-        while ($mediaVideo.firstChild) {
-            $mediaVideo.removeChild($mediaVideo.firstChild);
-        }
+        $mediaVideo.innerHTML = ' ';
 
         $mediaVideo.appendChild($mediaVideoFragment);
 
@@ -69,7 +66,7 @@ const mediaPlayer = async (id,cap)=>{
         const $capTemplate = d.getElementById('cap-template').content,
         $capFragment = d.createDocumentFragment();
 
-        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/${id}`),
+        res = await fetch(`https://page-anime-ajax.vercel.app/api/animes/id/${id}`),
         json = await res.json();
 
         
@@ -93,10 +90,7 @@ const mediaPlayer = async (id,cap)=>{
     })
 
     const $listCaps = d.querySelector('.list-caps');
-    
-    while ($listCaps.firstChild) {
-        $listCaps.removeChild($listCaps.firstChild);
-    }
+    $listCaps.innerHTML = ' ';
 
     $listCaps.appendChild($capFragment);
 
